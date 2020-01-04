@@ -28,7 +28,8 @@ namespace PrzygotowanieKolos
 				throw new ArgumentOutOfRangeException("Masz za mało środków");
 			else
 			{
-				wyplata -= this.StanKonta;
+				this.StanKonta -= wyplata;
+			
 				wyciag.Add("Dokonano wyplaty na kwote " + wyplata);
 			}
 		}
@@ -52,14 +53,14 @@ namespace PrzygotowanieKolos
 		static void Main(string[] args)
 		{
 			Konto testowe = new Konto();
-			int wybor;
+			menu wybor;
 			bool sprawdzCzyWyjsc = true;
 			try {
 				while (sprawdzCzyWyjsc)
 				{
 					
 					Console.WriteLine("Wybierz 0, aby wplacic, \n 1, aby wyplacic, \n 2, aby wysiwetlic wyciag \n 3, aby wsywietlic stan konta \n 4, aby zakonczyc");
-					while (!int.TryParse(Console.ReadLine(), out wybor) || wybor < 0 || wybor > 4)
+					while (!menu.TryParse(Console.ReadLine(), out wybor))
 					{
 						Console.WriteLine("Podałeś nie poprawną wartość");
 					}
@@ -67,17 +68,19 @@ namespace PrzygotowanieKolos
 					
 					switch (wybor)
 					{
-						case 0:
-							decimal wplata = 0;
+						case menu.Wplata:
+							decimal Mikolaj = 0;
 							Console.WriteLine("Podaj kwotę jaką chcesz wpłacić na konto");
-							while (!decimal.TryParse(Console.ReadLine(), out wplata))
+							while (!decimal.TryParse(Console.ReadLine(), out Mikolaj))
 							{
 								Console.WriteLine("Podałeś nie poprawną wartość");
 							}
-							testowe.Wplata(wplata);
+
+								testowe.Wplata(Mikolaj);
+
 
 							break;
-						case 1:
+						case menu.Wyplata:
 							decimal wyplata = 0;
 							Console.WriteLine("Podaj kwotę jaką chcesz wypłacić z konta");
 							while (!decimal.TryParse(Console.ReadLine(), out wyplata))
@@ -86,7 +89,7 @@ namespace PrzygotowanieKolos
 							}
 							testowe.Wyplata(wyplata);
 							break;
-						case 2:
+						case menu.GenerujWyciag:
 							//Pokazanie jak działa wczytywanie iformacji z pliku i wyświetlanie ich z konsoli
 							testowe.GenerujWyciag();
 							using (StreamReader sr = new StreamReader("wyciag.txt"))
@@ -98,10 +101,10 @@ namespace PrzygotowanieKolos
 								}
 							}
 							break;
-						case 3:
+						case menu.WyswietlStan:
 							Console.WriteLine("Twoj stan konta to: " + testowe.ZwrocStanKonta());
 							break;
-						case 4:
+						case menu.Zakoncz:
 							sprawdzCzyWyjsc = false;
 							break;
 					}
