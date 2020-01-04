@@ -1,0 +1,11 @@
+C:\Users\matiskov\source\repos\PrzygotowanieKolos\PrzygotowanieKolos\bin\Debug\netcoreapp3.1\PrzygotowanieKolos.exe
+C:\Users\matiskov\source\repos\PrzygotowanieKolos\PrzygotowanieKolos\bin\Debug\netcoreapp3.1\PrzygotowanieKolos.deps.json
+C:\Users\matiskov\source\repos\PrzygotowanieKolos\PrzygotowanieKolos\bin\Debug\netcoreapp3.1\PrzygotowanieKolos.runtimeconfig.json
+C:\Users\matiskov\source\repos\PrzygotowanieKolos\PrzygotowanieKolos\bin\Debug\netcoreapp3.1\PrzygotowanieKolos.runtimeconfig.dev.json
+C:\Users\matiskov\source\repos\PrzygotowanieKolos\PrzygotowanieKolos\bin\Debug\netcoreapp3.1\PrzygotowanieKolos.dll
+C:\Users\matiskov\source\repos\PrzygotowanieKolos\PrzygotowanieKolos\bin\Debug\netcoreapp3.1\PrzygotowanieKolos.pdb
+C:\Users\matiskov\source\repos\PrzygotowanieKolos\PrzygotowanieKolos\obj\Debug\netcoreapp3.1\PrzygotowanieKolos.csprojAssemblyReference.cache
+C:\Users\matiskov\source\repos\PrzygotowanieKolos\PrzygotowanieKolos\obj\Debug\netcoreapp3.1\PrzygotowanieKolos.AssemblyInfoInputs.cache
+C:\Users\matiskov\source\repos\PrzygotowanieKolos\PrzygotowanieKolos\obj\Debug\netcoreapp3.1\PrzygotowanieKolos.AssemblyInfo.cs
+C:\Users\matiskov\source\repos\PrzygotowanieKolos\PrzygotowanieKolos\obj\Debug\netcoreapp3.1\PrzygotowanieKolos.dll
+C:\Users\matiskov\source\repos\PrzygotowanieKolos\PrzygotowanieKolos\obj\Debug\netcoreapp3.1\PrzygotowanieKolos.pdb
